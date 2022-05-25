@@ -1,14 +1,33 @@
-from datetime import date as dt
+from datetime import datetime
 from airplane import Airplane
 
+now = datetime.now()
 
-class Flight:
 
-    def __init__(self, date, origin, destination, price):
+class Flight(Airplane):
+
+    def __init__(self):
+        super().__init__()
+        self.date = now
+        self.origin = "London"
+        self.destination = "Manchester"
+        self.passenger_list = []
+
+    def create_flight(self, date, origin, destination):
         self.date = date
         self.origin = origin
         self.destination = destination
-        self.price = price
+        self.flights.append([date, origin, destination])
+
+    def get_flight_details(self):
+        return f"Date: {self.date}, Origin: {self.origin}, Destination: {self.destination}"
+
+    def check_passengers(self):
+        print(self.passenger_list)
 
 
-turkey = Flight("24/05/2022", "London", "Istanbul", 144.5)
+
+
+
+
+
