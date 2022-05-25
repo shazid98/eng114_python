@@ -24,14 +24,14 @@ class Passenger(Flight):
 
 
 turkey = Flight()
-
 turkey.create_flight("24/05/2022", "London", "Istanbul")
 print(turkey.get_flight_details())
 #
 eric = Passenger("Eric", "Smith", 6757843)
+print(eric.get_passport())
 eric.buy_flight(turkey.date, turkey.origin, turkey.destination)
 #
-turkey.check_passengers()
+print(turkey.check_passengers())
 
 # damian = Passenger("Damian", "Martin", 3948928)
 

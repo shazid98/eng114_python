@@ -10,7 +10,9 @@ class Airplane(Aircraft):
         self.flights = []
 
     def check_flights(self):
-        print(self.flights)
+        return self.flights
+
+
 
 
 

@@ -23,7 +23,11 @@ class Flight(Airplane):
         return f"Date: {self.date}, Origin: {self.origin}, Destination: {self.destination}"
 
     def check_passengers(self):
-        print(self.passenger_list)
+        return self.passenger_list
+
+
+
+
 
 
 
