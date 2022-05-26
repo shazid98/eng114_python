@@ -5,7 +5,7 @@ class Airplane(Aircraft):
 
     def __init__(self):
         super().__init__()
-        self.company = "BA"
+        self.id = ""
         self.capacity = 200
         self.flights = []
 
