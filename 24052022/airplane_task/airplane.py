@@ -7,7 +7,7 @@ class Airplane(Aircraft):
         super().__init__()
         self.id = ""
         self.capacity = 200
-        self.flights = []
+        self.flights = {}
 
     def check_flights(self):
         return self.flights
