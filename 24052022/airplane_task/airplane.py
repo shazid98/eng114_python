@@ -12,6 +12,8 @@ class Airplane(Aircraft):
     def check_flights(self):
         return self.flights
 
+    
+
 
 
 
